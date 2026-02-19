@@ -1,0 +1,9 @@
+tunnel: dashboard-tunnel
+credentials-file: C:\Users\rajni\.cloudflared\dashboard-tunnel.json
+
+ingress:
+  - hostname: trendscraper.in
+    service: http://localhost:5176
+  - hostname: www.trendscraper.in
+    service: http://localhost:5176
+  - service: http_status:404
