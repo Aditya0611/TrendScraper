@@ -1,0 +1,21 @@
+EC:\Users\rajni\OneDrive\Desktop\facebook_scraper\base.py:403: ResourceWarning: unclosed file <_io.TextIOWrapper name='C:\\Users\\rajni\\OneDrive\\Desktop\\facebook_scraper\\logs\\scraper.log' mode='a' encoding='utf-8'>
+  logger.handlers.clear()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+..
+======================================================================
+ERROR: test_fatal_db_failure (verify_compliance_final.TestFinalCompliance)
+Verify that DB insertion failure is fatal (sys.exit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\rajni\OneDrive\Desktop\facebook_scraper\verify_compliance_final.py", line 77, in test_fatal_db_failure
+    scraper.save_results("test_category", [], "test_version_id")
+  File "C:\Users\rajni\OneDrive\Desktop\facebook_scraper\base.py", line 1005, in save_results
+    trend_records = self._normalize_to_trend_records(results, category, version_id)
+  File "C:\Users\rajni\OneDrive\Desktop\facebook_scraper\base.py", line 940, in _normalize_to_trend_records
+    topic_hashtag=item['hashtag'],
+TypeError: string indices must be integers
+
+----------------------------------------------------------------------
+Ran 3 tests in 4.310s
+
+FAILED (errors=1)

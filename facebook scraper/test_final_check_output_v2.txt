@@ -1,0 +1,17 @@
+﻿
+[TEST] Verifying Fatal DB Insertion...
+WARNING: No proxies found in PROXIES env var or config/proxies.txt
+Scraper will fail unless proxies are provided.
+{"asctime": "2025-12-28 00:33:50,859", "name": "base", "levelname": "INFO", "message": "BaseScraper initialized", "headless": false, "debug": false, "categories_loaded": 8, "proxies_available": 0, "timestamp": "2025-12-27T19:03:50.859555+00:00"}
+
+[TEST] Verifying 'No Bypass' Mandate...
+{"asctime": "2025-12-28 00:33:50,879", "name": "base", "levelname": "INFO", "message": "BaseScraper initialized", "headless": false, "debug": false, "categories_loaded": 8, "proxies_available": 0, "timestamp": "2025-12-27T19:03:50.879859+00:00"}
+{"asctime": "2025-12-28 00:33:50,880", "name": "base", "levelname": "INFO", "message": "Setting up browser", "timestamp": "2025-12-27T19:03:50.880397+00:00"}
+{"asctime": "2025-12-28 00:33:53,070", "name": "base", "levelname": "CRITICAL", "message": "PROXY LIST IS EMPTY OR ALL FAILED. Application cannot continue under 'No Bypass' policy.", "timestamp": "2025-12-27T19:03:53.070394+00:00"}
+PASS: Scraper hard-failed with sys.exit(1) on missing proxy.
+
+[TEST] Verifying Run Tracking Initialization...
+WARNING: No proxies found in PROXIES env var or config/proxies.txt
+Scraper will fail unless proxies are provided.
+{"asctime": "2025-12-28 00:33:53,078", "name": "base", "levelname": "INFO", "message": "BaseScraper initialized", "headless": false, "debug": false, "categories_loaded": 8, "proxies_available": 0, "timestamp": "2025-12-27T19:03:53.078921+00:00"}
+PASS: Run tracking initialized in Supabase.

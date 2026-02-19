@@ -1,0 +1,68 @@
+﻿Testing PROXY_STRICT_MODE=true with no proxies...
+{"asctime": "2025-12-26 10:16:11,524", "name": "base", "levelname": "INFO", "message": "BaseScraper initialized", "headless": true, "debug": false, "categories_loaded": 8, "proxies_available": 0, "timestamp": "2025-12-26T04:46:11.524128+00:00"}
+python : INFO:base:Ba
+seScraper initialized
+At line:1 char:1
++ python tests/test_p
+roxy_enforcement.py 
+> test_final_output.t
+xt 2>&1;  ...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (INFO:ba   
+ se:BaseScraper i    
+nitialized:Strin    
+g) [], RemoteExc    
+eption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+Test 1: Empty proxy list should trigger sys.exit(1)
+{"asctime": "2025-12-26 10:16:11,525", "name": "base", "levelname": "INFO", "message": "Setting up browser", "timestamp": "2025-12-26T04:46:11.525707+00:00"}
+INFO:base:Setting up 
+browser
+DEBUG:asyncio:Using 
+proactor: 
+IocpProactor
+{"asctime": "2025-12-26 10:16:12,661", "name": "base", "levelname": "ERROR", "message": "STRICT MODE ENFORCED: No proxy available.", "timestamp": "2025-12-26T04:46:12.661355+00:00"}
+ERROR:base:STRICT 
+MODE ENFORCED: No 
+proxy available.
+{"asctime": "2025-12-26 10:16:12,661", "name": "base", "levelname": "CRITICAL", "message": "PROXY LIST IS EMPTY. Application cannot continue.", "timestamp": "2025-12-26T04:46:12.661355+00:00"}
+CRITICAL:base:PROXY 
+LIST IS EMPTY. 
+Application cannot 
+continue.
+{"asctime": "2025-12-26 10:16:12,662", "name": "base", "levelname": "ERROR", "message": "Browser setup failed", "error": "No proxy available in PROXY_STRICT_MODE", "timestamp": "2025-12-26T04:46:12.662371+00:00"}
+{"asctime": "2025-12-26 10:16:12,662", "name": "base", "levelname": "CRITICAL", "message": "STRICT MODE: Raising fatal error for browser setup failure", "timestamp": "2025-12-26T04:46:12.662371+00:00"}
+Skipping expected exception during setup: No proxy available in PROXY_STRICT_MODE
+SUCCESS: base.sys.exit called with code: 1
+
+Test 2: PROXY_STRICT_MODE=true with rotation failure should raise RuntimeError
+{"asctime": "2025-12-26 10:16:12,664", "name": "base", "levelname": "INFO", "message": "BaseScraper initialized", "headless": true, "debug": false, "categories_loaded": 8, "proxies_available": 1, "timestamp": "2025-12-26T04:46:12.664219+00:00"}
+{"asctime": "2025-12-26 10:16:12,665", "name": "base", "levelname": "INFO", "message": "Setting up browser", "timestamp": "2025-12-26T04:46:12.665764+00:00"}
+{"asctime": "2025-12-26 10:16:12,666", "name": "base", "levelname": "ERROR", "message": "Browser setup failed", "error": "It looks like you are using Playwright Sync API inside the asyncio loop.\nPlease use the Async API instead.", "timestamp": "2025-12-26T04:46:12.666282+00:00"}
+{"asctime": "2025-12-26 10:16:12,666", "name": "base", "levelname": "CRITICAL", "message": "STRICT MODE: Raising fatal error for browser setup failure", "timestamp": "2025-12-26T04:46:12.666282+00:00"}
+Caught unexpected exception in Test 2: Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+ERROR:base:Browser 
+setup failed
+CRITICAL:base:STRICT 
+MODE: Raising fatal 
+error for browser 
+setup failure
+INFO:base:BaseScraper
+ initialized
+INFO:base:Setting up 
+browser
+ERROR:base:Browser 
+setup failed
+CRITICAL:base:STRICT 
+MODE: Raising fatal 
+error for browser 
+setup failure

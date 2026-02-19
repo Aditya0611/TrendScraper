@@ -1,0 +1,4 @@
+Checking tables at https://rnrnbbxnmtajjxscawrc.supabase.co...
+RESULT|facebook|FOUND|416
+RESULT|scrape_runs|ERROR|{'message': "Could not find the table 'public.scrape_runs' in the schema cache", 'code': 'PGRST205',
+RESULT|scraping_log|ERROR|{'message': "Could not find the table 'public.scraping_log' in the schema cache", 'code': 'PGRST205'

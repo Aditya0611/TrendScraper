@@ -1,0 +1,8 @@
+﻿Testing PROXY_STRICT_MODE=true with no proxies...
+{"asctime": "2025-12-26 10:03:43,223", "name": "base", "levelname": "INFO", "message": "BaseScraper initialized", "headless": true, "debug": false, "categories_loaded": 8, "proxies_available": 0, "timestamp": "2025-12-26T04:33:43.223096+00:00"}
+Test 1: Empty proxy list should trigger sys.exit(1)
+{"asctime": "2025-12-26 10:03:43,224", "name": "base", "levelname": "INFO", "message": "Setting up browser", "timestamp": "2025-12-26T04:33:43.224139+00:00"}
+{"asctime": "2025-12-26 10:03:43,860", "name": "base", "levelname": "ERROR", "message": "STRICT MODE ENFORCED: No proxy available.", "timestamp": "2025-12-26T04:33:43.860065+00:00"}
+{"asctime": "2025-12-26 10:03:43,860", "name": "base", "levelname": "CRITICAL", "message": "PROXY LIST IS EMPTY. Application cannot continue.", "timestamp": "2025-12-26T04:33:43.860539+00:00"}
+{"asctime": "2025-12-26 10:03:43,862", "name": "base", "levelname": "ERROR", "message": "Browser setup failed", "error": "No proxy available in PROXY_STRICT_MODE", "timestamp": "2025-12-26T04:33:43.862037+00:00"}
+Caught unexpected error in test script: UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
