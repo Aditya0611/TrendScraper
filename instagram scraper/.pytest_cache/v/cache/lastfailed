@@ -1,0 +1,4 @@
+{
+  "tests/test_coverage_boost.py::TestEngagementCalculatorCoverage::test_weighted_score": true,
+  "tests/TEST_EXECUTION_LOG.txt": true
+}

@@ -1,0 +1,10 @@
+--- TABLE STATUS SUMMARY ---
+instagram           : EXISTS
+trends              : MISSING
+hashtags            : MISSING
+trend_hashtags      : MISSING
+engagement_metrics  : MISSING
+snapshots           : MISSING
+scraper_runs        : MISSING
+scraper_logs        : MISSING
+scraper_config      : MISSING
