@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.log
+.env
+credentials.json
+debug_page.html
+debug_first_container.html
+Untitled-1.txt
+Untitled-2.txt
+linkedin_ai_posts.json
+output/
